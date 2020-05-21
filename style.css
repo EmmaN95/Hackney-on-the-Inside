@@ -1,0 +1,535 @@
+  /* Head of site  */
+      /* Main nav bar, for logo and the links*/
+      #banner {
+        height: 220px;
+        text-align: center;
+        font-size: 15px;
+        background-color:#000000;
+        overflow: hidden;
+        position: fixed;
+        top: 0px; 
+        width: 100%;
+        z-index: 1;
+       }
+
+       /* 1st bar, for the slogan 'The best guide to Hackney!' */
+       #banner2 {
+        padding: 5px; 
+        text-align: center;
+        font-size: 15px;
+        color:#000000;
+        background-color:#ff1616;
+        font-variant: small-caps;
+        font-weight: bolder;
+        margin-top: 220px; 
+       }
+       
+       /* 2nd bar, for page titles */
+       #banner3 {
+        padding: 5px; 
+        font-size: 12px;
+        text-align: center;
+        color:rgb(255, 255, 255);
+        background-color:#252525;
+        font-variant: small-caps;
+        margin-top: 0px; 
+        
+       }
+
+       /* for the contact us page text */
+       #banner4 {
+        padding: auto; 
+        margin-right:400px;
+        margin-left:400px;
+        font-size: 20px;
+        color:rgb(0, 0, 0);
+        background-color:#ffffff;
+        text-align: center;
+        font-family: didot;
+       }
+     
+
+       /* Hackney on the inside logo */
+       .logo{
+        width: 300px;
+        height: 250px;
+        margin-top: -50px;
+        margin-bottom: -50px;
+        
+       }
+
+       .footerlogo{
+        width: 150px;
+        height: 125px;
+        margin-top: -50px;
+        margin-bottom: -50px;
+        text-align: left;
+        }
+    
+
+    
+
+      /* Footer section */
+      footer {
+        padding: 30px; 
+        text-align: center;
+        background-color:rgb(6, 6, 6);
+        border-top: 2px solid #ff1616;
+        font-variant: small-caps;
+       }
+
+       .footertext{
+        font-variant: small-caps;
+        color: white;
+       }
+
+       * {
+        padding: 0;
+        margin:0;
+        box-sizing: border;
+       }
+      
+
+
+
+       /* START of navagation links*/
+
+       nav {
+        float:0; 
+        padding:0;
+       }
+    
+       nav ul {
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+       }  
+      
+       nav ul li{
+         margin:20px;
+       }
+  
+       li{
+         display: inline;
+       }
+  
+       li a{
+        padding:0 px;
+        float: 0;
+       }
+
+       nav ul li a{
+
+        font-variant: small-caps;
+        color:rgb(255, 255, 255);
+        text-decoration:none ;
+        font-size: 18 px;
+        display: inline-block;
+        text-align: center;
+        padding: 14px 16px;
+        
+       }
+    
+       nav ul li a:hover{
+    
+          color:#ff0000;
+          text-decoration:underline;
+       }
+
+       a{
+        font-variant: small-caps;
+        color:rgb(255, 255, 255);
+        text-decoration:none ;
+        font-size: 18 px;
+       }
+
+       /* END of navagation links */
+
+
+
+
+
+       /* Main, body and textboxes */
+
+        main {
+        background-color:rgb(255, 255, 255) ;
+        padding:0;
+        margin: auto;
+        padding-bottom: 50px;
+        margin-top: 0px; 
+        overflow: hidden;
+        }
+
+        p{
+          font-family: didot;
+          padding: 10px;
+        }
+
+        p.solid {
+          border-style: solid;
+         }
+
+        .title-main{
+          font-size: 30px;
+          font-weight: bold;
+         }
+        
+        .title{
+          font-size: 30px;
+          font-weight: bold;
+          margin-left: 230px;
+         }
+         
+
+         br{
+         padding: 10px;
+         }
+
+        .text-box-home{
+          width: 450px;
+          height: auto;
+          margin: 20px;
+          border: 2px #000000;
+          float: left;
+        }
+
+        .text-box{
+          width: 340px;
+          height: 200px;
+          margin-left: 240px;
+          border: 2px #000000;
+          margin: 0.5px;
+          display: inline-block;
+          font-size: 14px;
+        }
+
+        .im-txt-container{
+          margin: 0;
+        }
+
+        /* images */
+
+        .text-image{
+          width: 300px;
+          height: 200px;
+          margin-left: 170px;
+          border: 2px #000000;
+          float: left;
+        }
+
+        .image-container{
+          width: 450px;
+          margin: 20px;
+          height: 500px;
+          float: right; 
+          position: relative;
+          animation: slidein2 5s infinite;
+        }
+
+        .image-container2{
+          width: auto;
+          margin: 20px;
+          height: 300px;
+          float: right;
+          /* margin-right: 130px; */
+          margin-top: 80px;
+          position: relative;
+          animation: slidein 5s infinite;
+        }
+
+        .header-image{
+          width: 50%;
+          height: 500px;
+          float: left;
+          margin-bottom: 20px;
+        } 
+
+        /* animation fro side images  */
+        
+        .slide-in {
+          animation-timing-function: ease;
+        }
+
+        @keyframes slidein {
+          from {right: 0px;}
+          to {right: 130px;}
+        }
+
+        @keyframes slidein2 {
+          from {bottom: -10px;}
+          to {bottom: 50px;}
+        }
+
+        /* image overlay */
+        .overlay-image {
+          width: 300px;
+          height: 200px;
+          border: 2px #000000;
+          margin-left: 170px;
+          float: left;
+        }
+
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 300px;
+          height: 200px;
+          opacity: 0;
+          transition: .5s ease;
+          background-color: rgb(186, 37, 0);
+          margin-left: 170px;
+          z-index: 0;
+        }
+        
+        .overlay-container:hover .overlay {
+          opacity: 1;
+        }
+
+        .overlay-container {
+          position: relative;
+          width: 50%;
+          z-index: 0;
+        }
+        
+        .overlay-text {
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+        
+
+        /* lines for text decoration */
+        .short-line-home {
+          border: 1px solid rgb(0, 0, 0);
+          width: 500px;
+        }
+
+        .short-line {
+          border: 1px solid rgb(0, 0, 0);
+          width: 550px;
+          margin-left: 230px;
+          margin-bottom: 10px;
+        }
+
+        .long-line {
+          border: 1px solid rgb(0, 0, 0);
+          width: 95%;
+          margin-left: 30px;
+          margin-right: 30px;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        
+        .whitelong-line {
+          border: 1px solid rgb(255, 255, 255);
+          width: 95%;
+          margin-left: 30px;
+          margin-right: 30px;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+
+
+         /* Screen size */
+          div.content {
+          margin-left: 25%;
+          padding: 1px 16px;
+          height: 1000px;
+         }
+
+         @media screen and (max-width: 900px) {
+          ul.topnav {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+        ul.topnav li a {
+          float: left;
+          padding: 15px;
+        }
+        
+        div.content {
+            margin-left: 0;
+        }
+        }
+
+         @media screen and (max-width: 700px) {
+         ul.topnav li a {
+           text-align: center;
+           float: none;
+         }
+        } 
+
+
+
+
+        /*Carousel in home page*/
+
+        /* Slideshow container */
+        .slideshow-container {
+           max-width: 1000px;
+           margin: auto;
+           margin-top: 20px;
+         }
+
+         .mySlides {
+          display: none;
+        }
+
+         /* Captions */
+         .text {
+          color: #000000;
+          font-size: 15px;
+          padding: -5px 12px;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+
+         /* The dots */
+         .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+          text-align: center;
+        }
+
+        .active, .dot:hover {
+          background-color: #f50000;
+        }
+
+
+        
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 5s;
+          animation-name: fade;
+          animation-duration: 5s;
+        }
+        
+        @-webkit-keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+        
+        @keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+        
+        /* Images for carousel  */
+        .hackneypics{
+          width: 350px;
+          height: 550px;
+        }
+
+        /* contact us form */
+        
+        /* Style inputs with type="text", select elements and textareas */
+        input[type=text], select, textarea {
+          width: 100%; 
+          padding: 12px; 
+          border: 1px solid #ccc; 
+          border-radius: 4px; 
+          box-sizing: border-box; 
+          margin-top: 6px; 
+          margin-bottom: 16px; 
+          resize: vertical;
+        }
+
+        /* Style the submit button with a specific background color etc */
+        input[type=submit] {
+          background-color: rgb(0, 0, 0);
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+
+        /* When moving the mouse over the submit button, add a darker green color */
+        input[type=submit]:hover {
+          background-color: #ec0404;
+        }
+
+
+        /* Add a background color and some padding around the form */
+        .contact-container {
+          border-radius: 5px;
+          background-color: #ffffff;
+          padding: 20px;
+          text-align: center;
+          margin-right:400px;
+          margin-left:400px;
+          font-family: didit;
+        }
+
+        /* sociall media icons
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 10px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+ 
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+ 
+/* Set a specific color for each brand */
+ 
+/* Instagram */
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+ 
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.thumbnail:hover {
+  position:relative;
+  top:30px;
+  left:40px;
+  width:500px;
+  height:auto;
+  display:block;
+  z-index:999;
+}
+
+
+        
+
+
+
+
+  
+
+
+
+    
+   
